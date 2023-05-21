@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            #sign_in {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sign_in">
+            <h1 style="text-align: center;">Developer</h1>
+            <form action="/server.php" method="GET">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username"><br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"><br><br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email"><br><br>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="student">Student</label>
+                <input type="checkbox" name="student" id="student"><br><br>
+                <label for="male">Male</label>
+                <input type="radio" name="gander" value="male" id="male"><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gander" value="female" id="female"><br><br>
+                <label for="passport">Passport</label>
+                <input type="file" name="passport" id="passport"><br><br>
+                <label for="experience">Your experience</label>
+                <select name="experience" id="experience">
+                    <option value="0">Select the one option</option>
+                    <option value="1">0</option>
+                    <option value="2">1-2</option>
+                    <option value="3">2-5</option>
+                    <option value="4">5-10</option>
+                </select><br><br>
+                <label for="yourself">Yourself</label>
+                <textarea name="yourself" id="yourself" cols="30" rows="10"></textarea><br><br>
+
+
+                <hr>
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </body>
+</html>
